@@ -36,6 +36,11 @@
     header {
       background-image: url("./img/header.jpg");
     }
+    div.col-lg- img {
+      max-width: 100%;
+      height: 128px;
+      width: auto;
+    }
     </style>
 
 </head>
@@ -100,27 +105,7 @@
         </div>
         <div class="container">
 	<div class="row">
-		<center><a class="btn btn-default btn-xl" data-toggle="modal" href="#myModal" >Login</a></center>
-
-        <div class="modal hide" id="myModal">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">x</button>
-            <h3>Login to MyWebsite.com</h3>
-          </div>
-          <div class="modal-body">
-            <form method="post" action='' name="login_form">
-              <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
-              <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
-              <p><button type="submit" class="btn btn-primary">Sign in</button>
-                <a href="#">Forgot Password?</a>
-              </p>
-            </form>
-          </div>
-          <div class="modal-footer">
-            New To MyWebsite.com?
-            <a href="#" class="btn btn-primary">Register</a>
-          </div>
-        </div>
+		<center><a class="btn btn-default btn-xl" data-toggle="modal" data-target="#myModal" >Login</a></center>
 	</div>
 </div>
     </section>
@@ -286,6 +271,27 @@
         </div>
     </section>
 </aside>
+<div class="modal fade" role="dialog" id="myModal">
+  <div class="modal-dialog" style="background-color: #FFF;">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">x</button>
+      <h3 class="modal-title">Login to Hinterland</h3>
+    </div>
+    <div class="modal-body">
+      <form method="post" action='' name="login_form">
+        <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
+        <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
+        <p><button type="submit" class="btn btn-primary">Sign in</button>
+          <a href="#">Forgot Password?</a>
+        </p>
+      </form>
+    </div>
+    <div class="modal-footer">
+      New To Hinterland?
+      <a href="#" class="btn btn-primary">Register</a>
+    </div>
+  </div>
+</div>
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
